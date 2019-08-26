@@ -2,7 +2,8 @@
 layout: home
 title: Home
 ---
-
+<!-- <img src="/assets/cost_fn_1.png" alt="" width="575" height="476" class="alignnone size-full wp-image-160" style="border:1px solid black"/> -->
+<!-- <br><br>  -->
 # Data Science in Healthcare
 I am a medical doctor and a freelance software developer with an interest in data science. Recent projects have been my [iOS apps]({% link iOS_apps.md %}), exploring Python and Pandas, and building this website using Jekyll. 
 <br><br> 

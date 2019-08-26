@@ -55,7 +55,7 @@ header_pages:
   - index.md
   - iOS_apps.md
   - machine_learning.md
-  - recent_posts.md
+  - blog_posts.md
   - contact.md
 
 # Exclude from processing.

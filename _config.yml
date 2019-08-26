@@ -52,9 +52,10 @@ defaults:
 # MyNote: I've included this here to allow a page order
 
 header_pages:
+  - index.md
   - iOS_apps.md
   - machine_learning.md
-  - programming.md
+  - recent_posts.md
   - contact.md
 
 # Exclude from processing.

@@ -1,13 +1,8 @@
 ---
-layout: home
-title: Home
+layout: page
+title: Recent Posts
+permalink: /recentposts/
 ---
-
-# Data Science in Healthcare
-I am a medical doctor and a freelance software developer with an interest in data science. Recent projects have been my [iOS apps]({% link iOS_apps.md %}), exploring Python and Pandas, and building this website using Jekyll. 
-<br><br> 
-
-# Recent posts
 <ul class="post-list">
 {% for post in site.posts limit:4 %}
   {% if post.url %}

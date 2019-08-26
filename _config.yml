@@ -32,7 +32,7 @@ collections:
 collections:
   iosapps:
     output: true
-google_analytics: UA-107766224-1
+# google_analytics: UA-107766224-1
 disqus:
   shortname: jharrop
 

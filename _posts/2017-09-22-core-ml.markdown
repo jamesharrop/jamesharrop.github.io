@@ -1,0 +1,40 @@
+---
+title:  "Using coremltools to convert a scikit-learn model to Core ML format"
+categories: swift machine_learning top_post
+---
+I wanted to convert a trained Scikit-learn logistic regression model into a Core ML format model which could be used in iOS.
+
+Apple provide a Python package coremltools which can be used to make this conversion.
+
+I tried installing it using the instructions on the <a href="https://apple.github.io/coremltools/">Apple documentation</a>, and ran into an error message - it appears that Python version 2.7 is needed.
+
+The following steps (<a href="http://satoshi.blogs.com/ml/2017/06/installing-coremltools-on-macos.html">this post</a> was helpful!) worked OK on macOS Sierra:
+
+First, install a virtualenv with Python 2.7:
+
+<pre class="lang:default decode:true " ># If virtualenv not already installed globally:
+
+pip install virtualenv
+
+# Then create the virtual environment and activate it:
+
+virtualenv --python=/usr/bin/python2.7 pyv27
+source pyv27/bin/activate</pre> 
+
+Next install the required packages into this virtual environment:
+
+<pre class="lang:default decode:true " >pip install -U coremltools
+
+pip install scikit-learn</pre> 
+
+Then run the conversion from a Python script (<code>clf</code> is the name of this scikit-learn model):
+
+<pre class="lang:default decode:true " >import coremltools
+
+coreml_model = coremltools.converters.sklearn.convert(clf, ["Age"], "Breakdown")
+
+coreml_model.save("LogRegModel.mlmodel")</pre> 
+
+The documentation suggests evaluating the model with some predictions (<code>model.predict</code>)... but it appears this is not supported in my version of MacOS... 
+
+Next step is to try out this model in CoreML and Swift.

@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "The Map function in Swift"
+categories: swift
+---
+Let's look at the ```map``` function working on an Array.
+
+It can be thought of as applying some form of transformation to each element of the Array.
+
+You give it two things:
+
+1. The Array which it will work on
+2. A closure which is to work on each element of the Array.
+
+Let's start by creating an example array of Doubles:
+<pre>
+let a: [Double] = [2, 6, 3, 1, 2]
+</pre>
+
+Here is an example of the map function being used to double the value of each element of the array:
+
+<pre>
+let result = a.map { (element) -> Double in
+    return element * 2
+}
+</pre>
+
+So ```result``` is [4.0, 12.0, 6.0, 2.0, 4.0].
+
+Just as with the other higher order functions in Swift, it's possible to write this code in more concise ways. Here are some examples. All these formulations produce the same output.
+
+Swift can infer the output type is a ```Double```:
+<pre>
+a.map { (element) in
+    return element * 2
+}
+</pre>
+We don't need to include ```return``` in a one line closure:
+<pre> 
+a.map { (element) in element * 2 }
+</pre>
+We can use ```$0``` as a shorthand argument name. This is useful and easy to read here as there is only one argument. 
+<pre>
+a.map { $0 * 2 }
+</pre>
+Sometimes we need both the element and the index of that element. We can use the ```enumerate()``` function for this. Here's an example which shows how it can work:
+<pre>
+a.enumerate().map { (index, element) -> Double in
+    print("Element \(element) is at index \(index)")
+    return 0
+}
+</pre>
+This prints the following output to the console:
+<pre crayon="false">
+    Element 2.0 is at index 0
+    Element 6.0 is at index 1
+    Element 3.0 is at index 2
+    Element 1.0 is at index 3
+    Element 2.0 is at index 4
+</pre>
+Or say we are looking to multiply each element of our Array ```a``` by the corresponding element of an Array ```b```:
+<pre>
+let b: [Double] = [1, 2, 3, 4, 5]
+
+a.enumerate().map { (index, element) in element * b[index] }
+</pre>
+Which produces this Array: [2.0, 12.0, 9.0, 4.0, 10.0].

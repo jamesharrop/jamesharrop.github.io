@@ -1,0 +1,70 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: jharrop
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  Machine learning and medicine
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jharrop.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+collections:
+  - iosapps
+collections:
+  iosapps:
+    output: true
+google_analytics: UA-107766224-1
+disqus:
+  shortname: jharrop
+
+# Default variables
+defaults:
+  -
+    scope:
+      path: ""
+      types: "posts"
+    values:
+      comments: "true"
+      categories: "for_feed"
+      layout: "post"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+# MyNote: I've included this here to allow a page order
+
+header_pages:
+  - iOS_apps.md
+  - machine_learning.md
+  - programming.md
+  - contact.md
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

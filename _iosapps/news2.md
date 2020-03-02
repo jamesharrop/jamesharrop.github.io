@@ -3,7 +3,7 @@ layout: page
 title: NEWS2 - iOS App
 permalink: /iosapps/news2/
 ---
-This application, designed for use by medical professionals on iPhone, calculates a NEWS2 score.
+This prototype application, designed for use by medical professionals on iPhone, calculates a NEWS2 score. Not currently available on the App Store.
 
 <img src="/assets/news_1.png" alt="" width="320" height="570" class="alignnone size-full wp-image-160" style="border:1px solid black"/>
 

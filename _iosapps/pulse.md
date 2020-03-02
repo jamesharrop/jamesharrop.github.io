@@ -3,7 +3,7 @@ layout: page
 title: Resting Pulse app
 permalink: /iosapps/pulse/
 ---
-<h4>View this App on the Apple Store <a href="https://itunes.apple.com/app/resting-pulse/id1239860394?mt=8">here</a>.</h4>
+<h4>Update 2019: Not currently available on the App Store</h4>
 
 ![Screenshot of Pulse App]({{ "/assets/pulseapp1.png" }}){: height="600px" width="338px" style="border:1px solid black"}
 

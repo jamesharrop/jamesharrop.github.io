@@ -3,7 +3,7 @@ layout: page
 title: GP Doctor's Bag Medications - iOS App
 permalink: /iosapps/doctorsbag/
 ---
-<h4>View this App on the Apple Store <a href="https://itunes.apple.com/app/gp-doctors-bag/id1060775907?mt=8">here</a>.</h4>
+<h4>View this App on the Apple App Store <a href="https://itunes.apple.com/app/gp-doctors-bag/id1060775907?mt=8">here</a>.</h4>
 
 This application, designed for use by medical professionals using iPhone or iPad, enables you to store a list of the medications which you keep in your doctor's bag, and helps you make sure they are all within their expiry date and ready to use.
 

@@ -3,7 +3,7 @@ layout: page
 title: Kitchen Store Cupboard - iOS App
 permalink: /iosapps/kitchen/
 ---
-#### View this App on the Apple Store [here](https://itunes.apple.com/app/kitchen-store-cupboard/id1209020532?mt=8).
+Update 2019: Not currently available on the App Store
 
 ![Screenshot of Kitchen Store Cupboard App]({{ "/assets/kitchenapp1.png" }}){: height="600px" width="338px" style="border:1px solid black"}
 

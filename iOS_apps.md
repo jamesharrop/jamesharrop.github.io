@@ -3,9 +3,6 @@ layout: page
 title: iOS Apps
 permalink: /ios_apps/
 ---
-## [NEWS2 app]({% link _iosapps/news2.md %})
-<a href="{% link _iosapps/news2.md %}"><img src="{{ "/assets/news2icon.png" }}" width="110px" height="110px" title="Screenshot of NEWS2 App" alt="Screenshot of NEWS2 App"></a>
-An App to calculate NEWS2 score for clinicans.
 
 ## [Doctor's Bag app]({% link _iosapps/doctorsbag.md %})
 <a href="{% link _iosapps/doctorsbag.md %}"><img src="{{ "/assets/bagapp_small.png" }}" width="110px" height="110px" title="Screenshot of Bag App" alt="Screenshot of Bag App"></a>
